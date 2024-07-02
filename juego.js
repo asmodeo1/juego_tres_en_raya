@@ -133,11 +133,14 @@ function reiniciarPartida() {
     }
 }
 
-cargarVictorias();
-document.getElementById("juegan").textContent = juegan;
-document.getElementById("partida").addEventListener("click", jugar);
-document.getElementById("cerrar").addEventListener("click", cerrarResultado);
-document.getElementById("nueva").addEventListener("click", nuevaPartida);
-document.getElementById("reiniciar").addEventListener("click", reiniciarPartida);
+function inicializar() {
+    cargarVictorias();
+    document.getElementById("juegan").textContent = juegan;
+    document.getElementById("partida").addEventListener("click", jugar);
+    document.getElementById("cerrar").addEventListener("click", cerrarResultado);
+    document.getElementById("nueva").addEventListener("click", nuevaPartida);
+    document.getElementById("reiniciar").addEventListener("click", reiniciarPartida);
+}
 
+inicializar();
 
